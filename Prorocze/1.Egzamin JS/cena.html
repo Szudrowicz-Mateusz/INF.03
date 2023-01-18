@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styl.css">
+        <title>malarz</title>
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">Koszt farby</a></h1>
+        </header>
+
+        <main>
+            <div id="L">
+                <h3>Mieszamy czy wyceniamy</h3>
+                <a href="mieszamy.html">Mieszamy</a>
+                <br>
+                <a href="cena.html">Wyceniamy</a>
+            </div>
+
+            <div id="R">
+                <h3>Obliczanie na podstwie powierzchni zapotrzebowania na farbę</h3>
+                <a>Podaj powierzchnię</a>
+                <input type="number" id="wsadz">
+                <br>
+                <br>
+                <input type="submit" value="Policz" onclick="funkcja()">
+                <p id="ret"></p>
+            </div>
+        </main>
+
+        <footer>
+            <a>MALARZ</a>
+            <br>
+            <a>Strone opracował: 000000000000000000</a>
+        </footer>
+
+        <script type="text/javascript">
+
+
+
+            function funkcja(){
+
+                var liczba=document.getElementById("wsadz").value;
+                
+                var rec=Math.ceil(liczba/4);
+
+                document.getElementById("ret").innerHTML="Liczba jednolitowych puszke farby potrzebnych do pomalowania wynosi:"+rec;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+SELECT cena FROM `farby` as f WHERE f.kolor="niebieski"; 
+
+SELECT f.kolor ,f.cena DIV f.pojemnosc as"cena na litr"  FROM `farby` as f; 
+
+SELECT f.kolor FROM farby as f
+JOIN malowanie as m ON f.id_farby=m.id_farby
+WHERE m.id_pomieszczenia=3;

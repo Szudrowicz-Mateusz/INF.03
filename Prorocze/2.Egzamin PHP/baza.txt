@@ -1,0 +1,19 @@
+CREATE TABLE pokoje(id int, nazwa varchar(20),cena DECIMAL(11,2));
+
+ALTER TABLE pokoje MODIFY id int PRIMARY KEY;
+
+INSERT INTO pokoje VALUES (1,"jednoosobowy",100);
+INSERT INTO pokoje VALUES (2,"dwuosobowy",170);
+INSERT INTO pokoje VALUES (3,"trzyosobowy",210);
+
+4.Olałem to
+
+SELECT r.id_pok, SUM(r.liczba_dn) FROM rezerwacje as r
+GROUP BY r.id_pok;
+
+SELECT SUM(r.liczba_dn) FROM rezerwacje as r
+WHERE sezon="lato";
+
+UPDATE pokoje SET cena=cena*1.15;
+
+CREATE USER 'najemca'@'localhost' IDENTIFIED BY 'n@JEM1@!';

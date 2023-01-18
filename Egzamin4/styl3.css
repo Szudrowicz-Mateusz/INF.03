@@ -1,0 +1,28 @@
+html {font-family: Garamond;}
+
+header {background-color:  rosybrown;
+        color: white;
+        text-align: center;
+        padding: 10px;}
+
+form {background-color: darksalmon;
+        text-align: center;
+        padding: 40px;}
+
+main {display: flex;}
+
+#L,#R {background-color: lightsalmon;
+        height: 300px;
+        width: 30%;}
+
+#C {background-color: rosybrown;
+    height: 300px;
+    width: 40%;}
+
+footer {background-color: rosybrown;
+        color:white;
+        text-align: center;
+        padding: 30px;}
+
+ol {border: 2px solid rgb(255, 92, 92);
+    font-size: 150%;}

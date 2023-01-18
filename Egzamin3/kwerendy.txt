@@ -1,0 +1,11 @@
+SELECT f.tytul, f.rok,f.ocena FROM filmy as f
+JOIN gatunki as g on f.gatunki_id=g.id
+WHERE g.nazwa="komedia";
+
+SELECT f.id ,f.tytul,r.imie,r.nazwisko FROM filmy as f
+JOIN rezyserzy as r ON f.rezyserzy_id=r.id;
+
+SELECT f.id ,f.tytul,r.imie,r.nazwisko FROM filmy as f
+JOIN rezyserzy as r ON f.rezyserzy_id=r.id;
+
+UPDATE rezyserzy SET rezyserzy.imie="Francis Ford" WHERE rezyserzy.id=8;

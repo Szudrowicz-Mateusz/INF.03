@@ -1,0 +1,25 @@
+html {font-family: garamond;}
+
+header {display: flex;
+    background-color: #790DB5;
+        color: orange;
+        height: 200px;
+        text-align: center;}
+#g1,#g2,#g3,#g4 {width: 25%;}
+
+main {display: flex;
+    background-color: #FFE6A3;
+        height: 500px;}
+#L,#R {width: 50%;}
+
+footer {background-color: #790DB5 ;
+    color: orange;
+    text-align: center;
+    padding: 30px;}
+
+form {padding-top: 60px;}
+
+p {font-size: 150%;}
+
+a:visited {color: orange;}
+a {color: yellow;}

@@ -1,0 +1,28 @@
+body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+
+header {display: flex;
+    background-color:#003d33;
+                color: white;
+                text-align: center;
+                height: 50px;}
+
+#banerL{width: 70%;}
+#banerR{width: 30%;}
+
+main{display: flex;}
+
+#lewy{background-color: #26a69a;
+    height: 550px;
+    width: 30%;}
+#prawy{width: 70%;
+    background-color: #26a69a;
+    height: 550px;}
+
+footer{background-color:#003d33 ;
+        color: white;}
+
+fieldset{width: 400px;
+        margin: 30px;
+        text-align: center;
+        border: 1px solid #003d33}

@@ -1,0 +1,10 @@
+SELECT z.gatunek, z.wystepowanie FROM zwierzeta as z
+WHERE z.Gromady_id=1;
+
+SELECT z.id, z.gatunek,g.nazwa FROM zwierzeta as z
+JOIN gromady as g ON z.Gromady_id=g.id;
+
+SELECT COUNT(*) FROM zwierzeta as z
+WHERE z.Gromady_id=5;
+
+CREATE USER 'KatarzynaNowaka'@'localhost' IDENTIFIED BY 'password';

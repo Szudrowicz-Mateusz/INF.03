@@ -1,0 +1,11 @@
+SELECT z.dataZadania,z.miesiac,z.wpis FROM zadania as z
+WHERE z.miesiac="sierpien";
+
+SELECT z.miesiac, z.rok FROM zadania as z
+WHERE z.dataZadania="2020-08-01";
+
+SELECT DISTINCT z.wpis FROM zadania as z
+WHERE z.wpis LIKE '%o';
+
+UPDATE zadania SET wpis="Wycieczka: Karkonosze"
+WHERE dataZadania="2020-08-27";
